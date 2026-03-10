@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="300 Prompts para Ganhar Dinheiro com IA. Crie posts virais, reels, produtos digitais e copy de vendas com prompts prontos para copiar e colar.">
+  <meta name="description" content="300 prompts prontos para usar a IA da forma certa e transformar ideias em conteúdo, vendas e oportunidades.">
   <title>300 Prompts para Ganhar Dinheiro com IA</title>
 
   <style>
@@ -11,20 +11,20 @@
       --bg:#070b17;
       --bg2:#0d1328;
       --card:#11182f;
-      --card2:#161f3d;
+      --card2:#151f3e;
       --text:#eef2ff;
       --muted:#aeb8da;
       --line:rgba(255,255,255,.08);
       --brand:#7c5cff;
       --brand2:#00d4ff;
       --brand3:#35f3c7;
-      --success:#22c55e;
-      --warning:#ffb84d;
       --danger:#ff5d7a;
+      --success:#22c55e;
+      --warning:#ffcc66;
       --shadow:0 20px 50px rgba(0,0,0,.32);
       --radius:18px;
       --radius-lg:26px;
-      --max:1150px;
+      --max:1160px;
     }
 
     *{box-sizing:border-box}
@@ -35,9 +35,9 @@
       font-family:Arial, sans-serif;
       color:var(--text);
       background:
-        radial-gradient(circle at 10% 10%, rgba(124,92,255,.22), transparent 25%),
-        radial-gradient(circle at 90% 0%, rgba(0,212,255,.14), transparent 22%),
-        radial-gradient(circle at 50% 100%, rgba(53,243,199,.08), transparent 24%),
+        radial-gradient(circle at 10% 10%, rgba(124,92,255,.20), transparent 25%),
+        radial-gradient(circle at 90% 0%, rgba(0,212,255,.12), transparent 20%),
+        radial-gradient(circle at 50% 100%, rgba(53,243,199,.07), transparent 24%),
         linear-gradient(180deg, var(--bg), var(--bg2));
       overflow-x:hidden;
     }
@@ -51,7 +51,7 @@
         linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
       background-size:32px 32px;
-      mask-image:linear-gradient(to bottom, rgba(0,0,0,.5), transparent 90%);
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.55), transparent 90%);
     }
 
     .container{
@@ -81,49 +81,41 @@
       display:flex;
       align-items:center;
       gap:12px;
-      font-weight:800;
       text-decoration:none;
       color:var(--text);
-      min-width:0;
+      font-weight:800;
     }
 
     .logo-mark{
       width:38px;
       height:38px;
       border-radius:14px;
-      flex:0 0 38px;
       background:linear-gradient(135deg,var(--brand),var(--brand2));
       box-shadow:0 10px 28px rgba(124,92,255,.35);
-    }
-
-    .logo span:last-child{
-      font-size:16px;
-      line-height:1.1;
+      flex:0 0 38px;
     }
 
     .top-actions{
       display:flex;
-      align-items:center;
       gap:12px;
+      align-items:center;
       flex-wrap:wrap;
-      justify-content:flex-end;
     }
 
     .btn{
       display:inline-flex;
-      justify-content:center;
       align-items:center;
-      gap:10px;
+      justify-content:center;
       min-height:50px;
       padding:14px 22px;
       border-radius:14px;
-      border:1px solid var(--line);
       text-decoration:none;
       font-weight:700;
+      border:1px solid var(--line);
       color:var(--text);
       transition:.25s ease;
-      cursor:pointer;
       text-align:center;
+      cursor:pointer;
     }
 
     .btn:hover{
@@ -131,15 +123,10 @@
     }
 
     .btn-primary{
+      background:linear-gradient(135deg,var(--brand),var(--brand2));
       color:#08121b;
       border:none;
-      background:linear-gradient(135deg,var(--brand),var(--brand2));
       box-shadow:0 14px 34px rgba(0,212,255,.18), 0 10px 24px rgba(124,92,255,.25);
-    }
-
-    .btn-primary:hover{
-      filter:brightness(1.05);
-      box-shadow:0 18px 40px rgba(0,212,255,.22), 0 14px 30px rgba(124,92,255,.28);
     }
 
     .btn-soft{
@@ -147,20 +134,20 @@
     }
 
     .hero{
-      padding:72px 0 38px;
+      padding:72px 0 34px;
     }
 
     .hero-grid{
       display:grid;
-      grid-template-columns:1.1fr .9fr;
-      gap:26px;
+      grid-template-columns:1.15fr .85fr;
+      gap:24px;
       align-items:stretch;
     }
 
     .panel{
-      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border:1px solid var(--line);
       border-radius:var(--radius-lg);
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
       box-shadow:var(--shadow);
     }
 
@@ -175,15 +162,12 @@
       position:absolute;
       inset:-2px;
       background:
-        radial-gradient(circle at 0% 0%, rgba(124,92,255,.18), transparent 34%),
-        radial-gradient(circle at 100% 40%, rgba(0,212,255,.12), transparent 30%);
+        radial-gradient(circle at 0% 0%, rgba(124,92,255,.18), transparent 35%),
+        radial-gradient(circle at 100% 40%, rgba(0,212,255,.12), transparent 32%);
       pointer-events:none;
     }
 
-    .hero-copy > *{
-      position:relative;
-      z-index:1;
-    }
+    .hero-copy > *{ position:relative; z-index:1; }
 
     .badge{
       display:inline-flex;
@@ -191,12 +175,11 @@
       gap:10px;
       padding:10px 14px;
       border-radius:999px;
-      border:1px solid rgba(53,243,199,.2);
-      background:rgba(53,243,199,.08);
-      color:#d8fff7;
+      border:1px solid rgba(255,93,122,.24);
+      background:rgba(255,93,122,.08);
+      color:#ffd7df;
       font-size:13px;
       font-weight:700;
-      max-width:100%;
       flex-wrap:wrap;
     }
 
@@ -204,19 +187,19 @@
       width:10px;
       height:10px;
       border-radius:50%;
-      background:var(--brand3);
-      box-shadow:0 0 0 6px rgba(53,243,199,.12);
+      background:var(--danger);
+      box-shadow:0 0 0 6px rgba(255,93,122,.12);
       flex:0 0 10px;
     }
 
-    .hero h1{
-      margin:16px 0 14px;
-      font-size:clamp(30px, 6vw, 58px);
-      line-height:1.05;
+    h1{
+      margin:18px 0 14px;
+      font-size:clamp(32px, 6vw, 60px);
+      line-height:1.03;
       letter-spacing:-1px;
     }
 
-    .hero h1 .gradient{
+    .gradient{
       background:linear-gradient(135deg,var(--brand),var(--brand2),var(--brand3));
       -webkit-background-clip:text;
       background-clip:text;
@@ -225,10 +208,10 @@
 
     .subheadline{
       margin:0 0 20px;
-      max-width:58ch;
       color:var(--muted);
-      font-size:clamp(15px, 2vw, 18px);
-      line-height:1.6;
+      font-size:clamp(16px, 2vw, 19px);
+      line-height:1.65;
+      max-width:58ch;
     }
 
     .cta-row{
@@ -240,11 +223,9 @@
 
     .proof-row{
       display:flex;
-      gap:14px;
+      gap:12px;
       flex-wrap:wrap;
-      margin-top:10px;
-      color:var(--muted);
-      font-size:14px;
+      margin-top:14px;
     }
 
     .proof-pill{
@@ -255,19 +236,20 @@
       border-radius:999px;
       background:rgba(255,255,255,.04);
       border:1px solid var(--line);
-      flex-wrap:wrap;
+      color:var(--muted);
+      font-size:14px;
     }
 
     .proof-check{
       width:18px;
       height:18px;
       border-radius:6px;
-      background:rgba(34,197,94,.14);
-      border:1px solid rgba(34,197,94,.26);
-      color:#7ff0a1;
       display:flex;
       align-items:center;
       justify-content:center;
+      background:rgba(34,197,94,.14);
+      border:1px solid rgba(34,197,94,.26);
+      color:#7ef0a0;
       font-size:12px;
       font-weight:700;
       flex:0 0 18px;
@@ -280,20 +262,19 @@
       gap:16px;
     }
 
-    .glass-box{
+    .side-card{
       border-radius:22px;
       padding:20px;
       background:
-        radial-gradient(circle at 20% 20%, rgba(124,92,255,.18), transparent 40%),
-        radial-gradient(circle at 80% 20%, rgba(0,212,255,.14), transparent 36%),
+        radial-gradient(circle at 20% 20%, rgba(124,92,255,.16), transparent 40%),
+        radial-gradient(circle at 80% 20%, rgba(0,212,255,.12), transparent 36%),
         rgba(255,255,255,.03);
       border:1px solid var(--line);
     }
 
-    .box-title{
+    .side-card h3{
       margin:0 0 14px;
       font-size:20px;
-      line-height:1.2;
     }
 
     .meta-grid{
@@ -307,46 +288,18 @@
       border-radius:16px;
       background:rgba(255,255,255,.04);
       border:1px solid rgba(255,255,255,.08);
-      transition:.25s ease;
-    }
-
-    .meta-card:hover{
-      transform:translateY(-3px);
-      background:rgba(255,255,255,.06);
     }
 
     .meta-card b{
       display:block;
       margin-bottom:6px;
       font-size:16px;
-      line-height:1.2;
     }
 
     .meta-card small{
       color:var(--muted);
-      font-size:13px;
       line-height:1.5;
-    }
-
-    .mini-proof{
-      display:grid;
-      gap:10px;
-    }
-
-    .mini-item{
-      display:flex;
-      align-items:flex-start;
-      gap:10px;
-      color:var(--muted);
-      font-size:14px;
-      line-height:1.6;
-    }
-
-    .star{
-      color:#ffd76b;
-      font-size:15px;
-      flex:0 0 auto;
-      margin-top:2px;
+      font-size:13px;
     }
 
     .section{
@@ -359,7 +312,7 @@
 
     .section-head h2{
       margin:0 0 10px;
-      font-size:clamp(26px, 4vw, 38px);
+      font-size:clamp(28px, 4vw, 40px);
       letter-spacing:-.5px;
       line-height:1.15;
     }
@@ -368,11 +321,14 @@
       margin:0;
       color:var(--muted);
       max-width:68ch;
-      line-height:1.7;
+      line-height:1.75;
       font-size:16px;
     }
 
-    .grid-3{
+    .pain-grid,
+    .grid-3,
+    .bonus-grid,
+    .testimonials{
       display:grid;
       grid-template-columns:repeat(3,1fr);
       gap:18px;
@@ -381,8 +337,8 @@
     .card{
       padding:22px;
       border-radius:20px;
-      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
       border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
       box-shadow:var(--shadow);
       transition:.25s ease;
     }
@@ -418,6 +374,18 @@
       font-size:15px;
     }
 
+    .pain-banner{
+      padding:26px;
+      border-radius:24px;
+      border:1px solid rgba(255,93,122,.18);
+      background:linear-gradient(180deg, rgba(255,93,122,.08), rgba(255,255,255,.02));
+      box-shadow:var(--shadow);
+    }
+
+    .pain-banner strong{
+      color:var(--text);
+    }
+
     .social-proof-wrap{
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -426,7 +394,6 @@
     }
 
     .demo-card{
-      width:100%;
       padding:24px;
       border-radius:22px;
       background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
@@ -437,13 +404,12 @@
     .demo-card h3{
       margin:0 0 10px;
       font-size:24px;
-      line-height:1.2;
     }
 
     .demo-card p{
       margin:0 0 18px;
-      line-height:1.7;
       color:var(--muted);
+      line-height:1.7;
       font-size:15px;
     }
 
@@ -464,7 +430,7 @@
       font-size:15px;
     }
 
-    .bullets .ok{
+    .ok{
       width:20px;
       height:20px;
       border-radius:7px;
@@ -545,9 +511,8 @@
       border-radius:18px;
       font-size:15px;
       line-height:1.5;
-      position:relative;
-      box-shadow:0 4px 10px rgba(0,0,0,.08);
       color:#111;
+      box-shadow:0 4px 10px rgba(0,0,0,.08);
     }
 
     .msg span{
@@ -568,12 +533,6 @@
       align-self:flex-end;
       background:#d9fdd3;
       border-top-right-radius:8px;
-    }
-
-    .testimonials{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
     }
 
     .quote{
@@ -612,9 +571,29 @@
       flex:0 0 38px;
     }
 
+    .bonus-card{
+      padding:22px;
+      border-radius:20px;
+      border:1px solid rgba(255,255,255,.08);
+      background:linear-gradient(180deg, rgba(124,92,255,.08), rgba(0,212,255,.05));
+      box-shadow:var(--shadow);
+    }
+
+    .bonus-tag{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(53,243,199,.08);
+      border:1px solid rgba(53,243,199,.18);
+      color:#cffff5;
+      font-size:12px;
+      font-weight:700;
+    }
+
     .offer-wrap{
       display:grid;
-      grid-template-columns:1.1fr .9fr;
+      grid-template-columns:1.08fr .92fr;
       gap:18px;
       align-items:stretch;
     }
@@ -641,10 +620,7 @@
       animation:shine 5s linear infinite;
     }
 
-    .offer-card > *{
-      position:relative;
-      z-index:1;
-    }
+    .offer-card > *{ position:relative; z-index:1; }
 
     @keyframes shine{
       from{transform:translateX(-100%)}
@@ -666,7 +642,7 @@
     .offer-card h2{
       margin:14px 0 10px;
       line-height:1.15;
-      font-size:clamp(26px, 4vw, 36px);
+      font-size:clamp(28px, 4vw, 38px);
     }
 
     .price{
@@ -678,7 +654,7 @@
     }
 
     .price strong{
-      font-size:clamp(40px, 8vw, 52px);
+      font-size:clamp(40px, 8vw, 54px);
       line-height:1;
       letter-spacing:-1px;
     }
@@ -724,32 +700,6 @@
       font-size:15px;
       line-height:1.7;
       color:var(--muted);
-    }
-
-    .bonus-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-    }
-
-    .bonus-card{
-      padding:22px;
-      border-radius:20px;
-      border:1px solid rgba(255,255,255,.08);
-      background:linear-gradient(180deg, rgba(124,92,255,.08), rgba(0,212,255,.05));
-      box-shadow:var(--shadow);
-    }
-
-    .bonus-tag{
-      display:inline-block;
-      margin-bottom:12px;
-      padding:6px 10px;
-      border-radius:999px;
-      background:rgba(53,243,199,.08);
-      border:1px solid rgba(53,243,199,.18);
-      color:#cffff5;
-      font-size:12px;
-      font-weight:700;
     }
 
     .guarantee{
@@ -798,9 +748,7 @@
       line-height:1.5;
     }
 
-    summary::-webkit-details-marker{
-      display:none;
-    }
+    summary::-webkit-details-marker{ display:none; }
 
     details p{
       margin:12px 0 0;
@@ -842,9 +790,7 @@
       z-index:60;
     }
 
-    .back-top.show{
-      display:block;
-    }
+    .back-top.show{ display:block; }
 
     .mobile-buybar{
       display:none;
@@ -859,7 +805,7 @@
       border-top:1px solid rgba(255,255,255,.08);
     }
 
-    .mobile-buybar .buybar-inner{
+    .buybar-inner{
       display:grid;
       grid-template-columns:1fr auto;
       gap:10px;
@@ -880,12 +826,6 @@
       font-size:20px;
     }
 
-    .mobile-buybar .btn{
-      min-height:48px;
-      padding:12px 18px;
-      white-space:nowrap;
-    }
-
     .reveal{
       opacity:0;
       transform:translateY(28px);
@@ -899,20 +839,17 @@
 
     @media (max-width: 960px){
       .hero-grid,
-      .offer-wrap,
+      .pain-grid,
       .grid-3,
-      .testimonials,
       .bonus-grid,
-      .social-proof-wrap{
+      .testimonials,
+      .social-proof-wrap,
+      .offer-wrap{
         grid-template-columns:1fr;
       }
 
       .hero{
         padding-top:42px;
-      }
-
-      .top-actions{
-        gap:8px;
       }
     }
 
@@ -927,7 +864,6 @@
       }
 
       .top-actions .btn{
-        flex:1 1 100%;
         width:100%;
       }
 
@@ -981,23 +917,8 @@
         min-height:52px;
       }
 
-      .btn-soft{
-        width:100%;
-      }
-
       .price strong{
         font-size:42px;
-      }
-
-      .section-head p,
-      .subheadline,
-      .card p,
-      .quote p,
-      .side-box p,
-      .guarantee p,
-      details p,
-      .demo-card p{
-        font-size:15px;
       }
 
       .mobile-buybar{
@@ -1018,7 +939,7 @@
 
         <div class="top-actions">
           <a class="btn btn-soft" href="#faq">Tirar dúvidas</a>
-          <a class="btn btn-primary" href="https://pay.kiwify.com.br/HTl0t8F" target="_blank" rel="noopener noreferrer">Comprar agora</a>
+          <a class="btn btn-primary" href="#oferta">Quero ver a oferta</a>
         </div>
       </div>
     </div>
@@ -1031,62 +952,61 @@
         <section class="panel hero-copy reveal">
           <div class="badge">
             <span class="badge-dot"></span>
-            Acesso imediato • Copie e cole
+            Você não precisa ser expert em IA
           </div>
 
           <h1>
-            300 Prompts para <span class="gradient">ganhar dinheiro com IA</span>
-            usando conteúdo, vendas e produtos digitais
+            Você abre a IA, mas <span class="gradient">não sabe o que pedir</span> e acaba sem resultado?
           </h1>
 
           <p class="subheadline">
-            Pare de perder tempo tentando descobrir o que pedir para a IA. Receba prompts prontos para criar
-            <b>posts virais</b>, <b>roteiros de Reels</b>, <b>produtos digitais</b> e <b>copy de vendas</b> com muito mais rapidez.
+            A maioria das pessoas não falha porque a IA é ruim. Elas falham porque não sabem escrever o prompt certo.
+            E sem o prompt certo, a IA não gera conteúdo bom, não cria ofertas fortes e não ajuda a vender.
           </p>
 
           <div class="cta-row">
-            <a class="btn btn-primary" href="https://pay.kiwify.com.br/HTl0t8F" target="_blank" rel="noopener noreferrer">Quero acesso imediato</a>
-            <a class="btn btn-soft" href="#conteudo">Ver o que vou receber</a>
+            <a class="btn btn-primary" href="#solucao">Quero entender como resolver isso</a>
+            <a class="btn btn-soft" href="#prova-social">Ver prova social</a>
           </div>
 
           <div class="proof-row">
-            <span class="proof-pill"><span class="proof-check">✓</span> Fácil para iniciantes</span>
-            <span class="proof-pill"><span class="proof-check">✓</span> ChatGPT, Gemini e Claude</span>
-            <span class="proof-pill"><span class="proof-check">✓</span> Uso imediato</span>
+            <span class="proof-pill"><span class="proof-check">✓</span> Simples para iniciantes</span>
+            <span class="proof-pill"><span class="proof-check">✓</span> Copie e cole</span>
+            <span class="proof-pill"><span class="proof-check">✓</span> Aplicação prática</span>
           </div>
         </section>
 
         <aside class="panel hero-side reveal">
-          <div class="glass-box">
-            <h3 class="box-title">O que vem no pacote</h3>
-
+          <div class="side-card">
+            <h3>O problema real não é a IA</h3>
             <div class="meta-grid">
               <div class="meta-card">
-                <b>300 prompts</b>
-                <small>organizados por objetivo</small>
+                <b>Falta de direção</b>
+                <small>você sabe que a IA pode ajudar, mas trava na hora de pedir</small>
               </div>
-
               <div class="meta-card">
-                <b>Copy & Conteúdo</b>
-                <small>para criar e vender</small>
+                <b>Tempo perdido</b>
+                <small>testando comandos aleatórios sem chegar em nada útil</small>
               </div>
-
               <div class="meta-card">
-                <b>Formato simples</b>
-                <small>copie, cole e adapte</small>
+                <b>Conteúdo fraco</b>
+                <small>as respostas saem genéricas e não geram resultado</small>
               </div>
-
               <div class="meta-card">
-                <b>Aplicação prática</b>
-                <small>uso real no digital</small>
+                <b>Baixa ação</b>
+                <small>sem um caminho pronto, você desanima e não aplica</small>
               </div>
             </div>
           </div>
 
-          <div class="glass-box mini-proof">
-            <div class="mini-item"><span class="star">★</span> Ideal para afiliados, criadores, freelancers e infoprodutores</div>
-            <div class="mini-item"><span class="star">★</span> Economize horas na criação de conteúdo e páginas de venda</div>
-            <div class="mini-item"><span class="star">★</span> Tenha ideias e estruturas prontas sem começar do zero</div>
+          <div class="side-card">
+            <h3>Quando isso acontece...</h3>
+            <ul class="bullets" style="margin-top:0;">
+              <li><span class="ok">✓</span> o conteúdo não sai</li>
+              <li><span class="ok">✓</span> as ideias não se transformam em produto</li>
+              <li><span class="ok">✓</span> a copy não convence</li>
+              <li><span class="ok">✓</span> a IA vira só curiosidade, não ferramenta</li>
+            </ul>
           </div>
         </aside>
 
@@ -1094,13 +1014,59 @@
     </div>
   </main>
 
+  <section class="section reveal">
+    <div class="container">
+      <div class="pain-banner">
+        <div class="section-head" style="margin-bottom:0;">
+          <h2>Se você não sabe o que pedir, a IA não trabalha por você</h2>
+          <p>
+            <strong>Esse é o ponto:</strong> quem sabe usar prompts certos consegue criar conteúdo, vender melhor e ganhar velocidade.
+            Quem não sabe, continua travado, testando comandos aleatórios e perdendo tempo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="solucao">
+    <div class="container">
+      <div class="section-head">
+        <h2>A solução não é aprender tudo sobre IA</h2>
+        <p>
+          A solução é ter os prompts certos, já pensados para situações reais. Em vez de começar do zero,
+          você usa estruturas prontas para fazer a IA gerar exatamente o que você precisa.
+        </p>
+      </div>
+
+      <div class="pain-grid">
+        <article class="card">
+          <div class="icon">⚡</div>
+          <h3>Mais rapidez</h3>
+          <p>Você para de perder tempo tentando inventar comandos e começa a executar com muito mais velocidade.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🎯</div>
+          <h3>Mais clareza</h3>
+          <p>Os prompts guiam a IA com mais precisão, evitando respostas genéricas e fracas.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">💸</div>
+          <h3>Mais resultado</h3>
+          <p>Você usa a IA para criar conteúdo, ideias de negócio e textos de venda com aplicação prática.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section class="section reveal" id="conteudo">
     <div class="container">
       <div class="section-head">
-        <h2>O que você vai conseguir criar</h2>
+        <h2>Apresentando a forma mais simples de fazer a IA trabalhar por você</h2>
         <p>
-          Esse material foi pensado para quem quer transformar a IA em uma ferramenta prática de produção e vendas,
-          sem enrolação e sem precisar ser especialista.
+          O pacote <strong>300 Prompts para Ganhar Dinheiro com IA</strong> foi criado para quem quer parar de travar
+          e começar a usar a IA com objetivo, clareza e praticidade.
         </p>
       </div>
 
@@ -1217,9 +1183,9 @@
   <section class="section reveal">
     <div class="container">
       <div class="section-head">
-        <h2>O que as pessoas mais buscam com esse tipo de material</h2>
+        <h2>O que as pessoas mais querem quando usam IA para ganhar dinheiro</h2>
         <p>
-          Mais velocidade, mais clareza e menos tempo perdido tentando descobrir como usar a IA da forma certa.
+          Mais velocidade, mais clareza e menos tentativa e erro.
         </p>
       </div>
 
@@ -1254,8 +1220,8 @@
   <section class="section reveal">
     <div class="container">
       <div class="section-head">
-        <h2>Bônus para acelerar seus resultados</h2>
-        <p>Esses extras ajudam a aplicar os prompts com ainda mais rapidez.</p>
+        <h2>Bônus para acelerar ainda mais</h2>
+        <p>Além do pacote principal, você pode usar essas ideias extras para aplicar mais rápido.</p>
       </div>
 
       <div class="bonus-grid">
@@ -1285,8 +1251,13 @@
       <div class="offer-wrap">
 
         <div class="offer-card">
-          <span class="offer-label">OFERTA ESPECIAL</span>
-          <h2>Tenha acesso agora ao pacote completo</h2>
+          <span class="offer-label">AGORA SIM: A OFERTA</span>
+          <h2>Tenha acesso imediato ao pacote completo</h2>
+
+          <p style="color:var(--muted); margin:0 0 6px; line-height:1.7;">
+            Depois de entender o problema, a solução e como isso pode facilitar sua vida,
+            aqui está a forma mais simples de começar agora.
+          </p>
 
           <div class="price">
             <strong>R$19,90</strong>
@@ -1298,7 +1269,7 @@
           </div>
 
           <div class="cta-row">
-            <a class="btn btn-primary" href="https://pay.kiwify.com.br/HTl0t8F" target="_blank" rel="noopener noreferrer">Comprar agora</a>
+            <a class="btn btn-primary" href="https://pay.kiwify.com.br/HTl0t8F" target="_blank" rel="noopener noreferrer">Quero acessar agora</a>
           </div>
 
           <ul class="bullets">
@@ -1329,10 +1300,10 @@
   <section class="section reveal">
     <div class="container">
       <div class="guarantee">
-        <h3>Garantia de satisfação</h3>
+        <h3>Menos risco, mais clareza para decidir</h3>
         <p>
-          Você compra com mais segurança e acessa o material de forma imediata. Essa seção ajuda a aumentar a confiança
-          na oferta e reduzir a objeção antes da compra.
+          Essa oferta foi pensada para ser simples, acessível e prática. Em vez de continuar travado tentando descobrir sozinho,
+          você já entra com um material pronto para aplicar.
         </p>
       </div>
     </div>
@@ -1420,7 +1391,6 @@
     revealEls.forEach((el)=>revealObserver.observe(el));
 
     const backTop = document.getElementById("backTop");
-
     window.addEventListener("scroll", ()=>{
       if(window.scrollY > 320){
         backTop.classList.add("show");
