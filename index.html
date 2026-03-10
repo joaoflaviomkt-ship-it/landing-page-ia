@@ -1,1224 +1,392 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="300 Prompts para Ganhar Dinheiro com IA. Crie posts virais, reels, produtos digitais e copy de vendas com prompts prontos para copiar e colar.">
-  <title>300 Prompts para Ganhar Dinheiro com IA</title>
-
-  <style>
-    :root{
-      --bg:#070b17;
-      --bg2:#0d1328;
-      --card:#11182f;
-      --card-soft:rgba(255,255,255,.04);
-      --text:#eef2ff;
-      --muted:#aeb8da;
-      --line:rgba(255,255,255,.08);
-      --brand:#7c5cff;
-      --brand2:#00d4ff;
-      --brand3:#35f3c7;
-      --success:#22c55e;
-      --warning:#ffb84d;
-      --danger:#ff5d7a;
-      --shadow:0 20px 50px rgba(0,0,0,.32);
-      --radius:18px;
-      --radius-lg:26px;
-      --max:1150px;
-    }
-
-    *{box-sizing:border-box}
-
-    html{
-      scroll-behavior:smooth;
-    }
-
-    body{
-      margin:0;
-      font-family:Arial, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(circle at 10% 10%, rgba(124,92,255,.22), transparent 25%),
-        radial-gradient(circle at 90% 0%, rgba(0,212,255,.14), transparent 22%),
-        radial-gradient(circle at 50% 100%, rgba(53,243,199,.08), transparent 24%),
-        linear-gradient(180deg, var(--bg), var(--bg2));
-      overflow-x:hidden;
-    }
-
-    body::before{
-      content:"";
-      position:fixed;
-      inset:0;
-      pointer-events:none;
-      background-image:
-        linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
-      background-size:32px 32px;
-      mask-image:linear-gradient(to bottom, rgba(0,0,0,.5), transparent 90%);
-    }
-
-    .container{
-      width:min(var(--max), calc(100% - 32px));
-      margin:auto;
-      padding:0 10px;
-    }
-
-    .topbar{
-      position:sticky;
-      top:0;
-      z-index:50;
-      backdrop-filter:blur(14px);
-      background:rgba(7,11,23,.72);
-      border-bottom:1px solid var(--line);
-    }
-
-    .topbar-inner{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:16px;
-      padding:14px 0;
-    }
-
-    .logo{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      font-weight:800;
-      text-decoration:none;
-      color:var(--text);
-      min-width:0;
-    }
-
-    .logo-mark{
-      width:38px;
-      height:38px;
-      border-radius:14px;
-      flex:0 0 38px;
-      background:linear-gradient(135deg,var(--brand),var(--brand2));
-      box-shadow:0 10px 28px rgba(124,92,255,.35);
-    }
-
-    .logo span:last-child{
-      font-size:16px;
-      line-height:1.1;
-    }
-
-    .top-actions{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      flex-wrap:wrap;
-      justify-content:flex-end;
-    }
-
-    .btn{
-      display:inline-flex;
-      justify-content:center;
-      align-items:center;
-      gap:10px;
-      min-height:50px;
-      padding:14px 22px;
-      border-radius:14px;
-      border:1px solid var(--line);
-      text-decoration:none;
-      font-weight:700;
-      color:var(--text);
-      transition:.25s ease;
-      cursor:pointer;
-      text-align:center;
-    }
-
-    .btn:hover{
-      transform:translateY(-2px);
-    }
-
-    .btn-primary{
-      color:#08121b;
-      border:none;
-      background:linear-gradient(135deg,var(--brand),var(--brand2));
-      box-shadow:0 14px 34px rgba(0,212,255,.18), 0 10px 24px rgba(124,92,255,.25);
-    }
-
-    .btn-primary:hover{
-      filter:brightness(1.05);
-      box-shadow:0 18px 40px rgba(0,212,255,.22), 0 14px 30px rgba(124,92,255,.28);
-    }
-
-    .btn-soft{
-      background:rgba(255,255,255,.04);
-    }
-
-    .hero{
-      padding:72px 0 38px;
-    }
-
-    .hero-grid{
-      display:grid;
-      grid-template-columns:1.15fr .85fr;
-      gap:26px;
-      align-items:stretch;
-    }
-
-    .panel{
-      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border:1px solid var(--line);
-      border-radius:var(--radius-lg);
-      box-shadow:var(--shadow);
-    }
-
-    .hero-copy{
-      padding:34px;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .hero-copy::before{
-      content:"";
-      position:absolute;
-      inset:-2px;
-      background:
-        radial-gradient(circle at 0% 0%, rgba(124,92,255,.18), transparent 34%),
-        radial-gradient(circle at 100% 40%, rgba(0,212,255,.12), transparent 30%);
-      pointer-events:none;
-    }
-
-    .hero-copy > *{
-      position:relative;
-      z-index:1;
-    }
-
-    .badge{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:10px 14px;
-      border-radius:999px;
-      border:1px solid rgba(53,243,199,.2);
-      background:rgba(53,243,199,.08);
-      color:#d8fff7;
-      font-size:13px;
-      font-weight:700;
-      max-width:100%;
-      flex-wrap:wrap;
-    }
-
-    .badge-dot{
-      width:10px;
-      height:10px;
-      border-radius:50%;
-      background:var(--brand3);
-      box-shadow:0 0 0 6px rgba(53,243,199,.12);
-      flex:0 0 10px;
-    }
-
-    .hero h1{
-      margin:16px 0 14px;
-      font-size:clamp(30px, 6vw, 58px);
-      line-height:1.05;
-      letter-spacing:-1px;
-    }
-
-    .hero h1 .gradient{
-      background:linear-gradient(135deg,var(--brand),var(--brand2),var(--brand3));
-      -webkit-background-clip:text;
-      background-clip:text;
-      color:transparent;
-    }
-
-    .subheadline{
-      margin:0 0 20px;
-      max-width:58ch;
-      color:var(--muted);
-      font-size:clamp(15px, 2vw, 18px);
-      line-height:1.6;
-    }
-
-    .cta-row{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin:20px 0 14px;
-    }
-
-    .proof-row{
-      display:flex;
-      gap:14px;
-      flex-wrap:wrap;
-      margin-top:10px;
-      color:var(--muted);
-      font-size:14px;
-    }
-
-    .proof-pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:8px 12px;
-      border-radius:999px;
-      background:rgba(255,255,255,.04);
-      border:1px solid var(--line);
-      flex-wrap:wrap;
-    }
-
-    .proof-check{
-      width:18px;
-      height:18px;
-      border-radius:6px;
-      background:rgba(34,197,94,.14);
-      border:1px solid rgba(34,197,94,.26);
-      color:#7ff0a1;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:12px;
-      font-weight:700;
-      flex:0 0 18px;
-    }
-
-    .hero-side{
-      padding:24px;
-      display:flex;
-      flex-direction:column;
-      gap:16px;
-    }
-
-    .glass-box{
-      border-radius:22px;
-      padding:20px;
-      background:
-        radial-gradient(circle at 20% 20%, rgba(124,92,255,.18), transparent 40%),
-        radial-gradient(circle at 80% 20%, rgba(0,212,255,.14), transparent 36%),
-        rgba(255,255,255,.03);
-      border:1px solid var(--line);
-    }
-
-    .box-title{
-      margin:0 0 14px;
-      font-size:20px;
-      line-height:1.2;
-    }
-
-    .meta-grid{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:14px;
-    }
-
-    .meta-card{
-      padding:16px;
-      border-radius:16px;
-      background:rgba(255,255,255,.04);
-      border:1px solid rgba(255,255,255,.08);
-      transition:.25s ease;
-    }
-
-    .meta-card:hover{
-      transform:translateY(-3px);
-      background:rgba(255,255,255,.06);
-    }
-
-    .meta-card b{
-      display:block;
-      margin-bottom:6px;
-      font-size:16px;
-      line-height:1.2;
-    }
-
-    .meta-card small{
-      color:var(--muted);
-      font-size:13px;
-      line-height:1.5;
-    }
-
-    .mini-proof{
-      display:grid;
-      gap:10px;
-    }
-
-    .mini-item{
-      display:flex;
-      align-items:flex-start;
-      gap:10px;
-      color:var(--muted);
-      font-size:14px;
-      line-height:1.6;
-    }
-
-    .star{
-      color:#ffd76b;
-      font-size:15px;
-      flex:0 0 auto;
-      margin-top:2px;
-    }
-
-    .section{
-      padding:34px 0;
-    }
-
-    .section-head{
-      margin-bottom:20px;
-    }
-
-    .section-head h2{
-      margin:0 0 10px;
-      font-size:clamp(26px, 4vw, 38px);
-      letter-spacing:-.5px;
-      line-height:1.15;
-    }
-
-    .section-head p{
-      margin:0;
-      color:var(--muted);
-      max-width:68ch;
-      line-height:1.7;
-      font-size:16px;
-    }
-
-    .grid-3{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-    }
-
-    .card{
-      padding:22px;
-      border-radius:20px;
-      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border:1px solid var(--line);
-      box-shadow:var(--shadow);
-      transition:.25s ease;
-    }
-
-    .card:hover{
-      transform:translateY(-5px);
-      border-color:rgba(0,212,255,.24);
-    }
-
-    .icon{
-      width:46px;
-      height:46px;
-      border-radius:15px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:22px;
-      margin-bottom:14px;
-      background:linear-gradient(135deg, rgba(124,92,255,.18), rgba(0,212,255,.18));
-      border:1px solid rgba(255,255,255,.08);
-    }
-
-    .card h3{
-      margin:0 0 8px;
-      font-size:20px;
-      line-height:1.2;
-    }
-
-    .card p{
-      margin:0;
-      color:var(--muted);
-      line-height:1.65;
-      font-size:15px;
-    }
-
-    .testimonials{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-    }
-
-    .quote{
-      padding:22px;
-      border-radius:20px;
-      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border:1px solid var(--line);
-      box-shadow:var(--shadow);
-    }
-
-    .quote p{
-      margin:0 0 16px;
-      line-height:1.7;
-      font-size:15px;
-    }
-
-    .quote-footer{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      color:var(--muted);
-      font-size:14px;
-    }
-
-    .avatar{
-      width:38px;
-      height:38px;
-      border-radius:12px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:rgba(255,255,255,.08);
-      border:1px solid var(--line);
-      color:var(--text);
-      font-weight:800;
-      flex:0 0 38px;
-    }
-
-    .offer-wrap{
-      display:grid;
-      grid-template-columns:1.1fr .9fr;
-      gap:18px;
-      align-items:stretch;
-    }
-
-    .offer-card{
-      padding:28px;
-      border-radius:24px;
-      border:1px solid rgba(0,212,255,.18);
-      background:
-        radial-gradient(circle at 20% 10%, rgba(0,212,255,.12), transparent 36%),
-        radial-gradient(circle at 80% 30%, rgba(124,92,255,.18), transparent 34%),
-        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      box-shadow:var(--shadow);
-      position:relative;
-      overflow:hidden;
-    }
-
-    .offer-card::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:linear-gradient(120deg, transparent, rgba(255,255,255,.05), transparent);
-      transform:translateX(-100%);
-      animation:shine 5s linear infinite;
-    }
-
-    .offer-card > *{
-      position:relative;
-      z-index:1;
-    }
-
-    @keyframes shine{
-      from{transform:translateX(-100%)}
-      to{transform:translateX(100%)}
-    }
-
-    .offer-label{
-      display:inline-block;
-      padding:8px 12px;
-      border-radius:999px;
-      font-size:12px;
-      font-weight:800;
-      letter-spacing:.4px;
-      color:#fff2d2;
-      background:rgba(255,184,77,.12);
-      border:1px solid rgba(255,184,77,.25);
-    }
-
-    .offer-card h2{
-      margin:14px 0 10px;
-      line-height:1.15;
-      font-size:clamp(26px, 4vw, 36px);
-    }
-
-    .price{
-      display:flex;
-      align-items:flex-end;
-      gap:10px;
-      flex-wrap:wrap;
-      margin:16px 0 10px;
-    }
-
-    .price strong{
-      font-size:clamp(40px, 8vw, 52px);
-      line-height:1;
-      letter-spacing:-1px;
-    }
-
-    .price span{
-      color:var(--muted);
-      font-size:15px;
-      padding-bottom:4px;
-    }
-
-    .timer{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      flex-wrap:wrap;
-      margin:10px 0 20px;
-      padding:10px 14px;
-      border-radius:999px;
-      background:rgba(255,93,122,.1);
-      border:1px solid rgba(255,93,122,.2);
-      color:#ffd2db;
-      font-weight:700;
-      font-size:14px;
-      max-width:100%;
-    }
-
-    .bullets{
-      list-style:none;
-      margin:18px 0 0;
-      padding:0;
-      display:grid;
-      gap:12px;
-    }
-
-    .bullets li{
-      display:flex;
-      gap:10px;
-      align-items:flex-start;
-      color:var(--muted);
-      line-height:1.6;
-      font-size:15px;
-    }
-
-    .bullets .ok{
-      width:20px;
-      height:20px;
-      border-radius:7px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:rgba(34,197,94,.14);
-      border:1px solid rgba(34,197,94,.24);
-      color:#7ef0a0;
-      font-size:12px;
-      flex:0 0 20px;
-      margin-top:2px;
-    }
-
-    .side-box{
-      padding:24px;
-      border-radius:24px;
-      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border:1px solid var(--line);
-      box-shadow:var(--shadow);
-    }
-
-    .side-box h3{
-      margin:0 0 10px;
-      font-size:24px;
-      line-height:1.2;
-    }
-
-    .side-box p{
-      margin:0 0 16px;
-      font-size:15px;
-      line-height:1.7;
-    }
-
-    .side-box .bullets{
-      margin-top:0;
-    }
-
-    .bonus-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-    }
-
-    .bonus-card{
-      padding:22px;
-      border-radius:20px;
-      border:1px solid rgba(255,255,255,.08);
-      background:linear-gradient(180deg, rgba(124,92,255,.08), rgba(0,212,255,.05));
-      box-shadow:var(--shadow);
-    }
-
-    .bonus-tag{
-      display:inline-block;
-      margin-bottom:12px;
-      padding:6px 10px;
-      border-radius:999px;
-      background:rgba(53,243,199,.08);
-      border:1px solid rgba(53,243,199,.18);
-      color:#cffff5;
-      font-size:12px;
-      font-weight:700;
-    }
-
-    .guarantee{
-      padding:26px;
-      border-radius:24px;
-      background:linear-gradient(180deg, rgba(34,197,94,.08), rgba(255,255,255,.02));
-      border:1px solid rgba(34,197,94,.18);
-      box-shadow:var(--shadow);
-    }
-
-    .guarantee h3{
-      margin:0 0 10px;
-      font-size:28px;
-      line-height:1.15;
-    }
-
-    .guarantee p{
-      margin:0;
-      color:var(--muted);
-      line-height:1.7;
-      font-size:16px;
-    }
-
-    .faq{
-      display:grid;
-      gap:12px;
-    }
-
-    details{
-      border-radius:18px;
-      border:1px solid var(--line);
-      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      padding:16px 18px;
-      transition:.2s ease;
-    }
-
-    details[open]{
-      border-color:rgba(0,212,255,.24);
-      background:rgba(17,24,47,.95);
-    }
-
-    summary{
-      cursor:pointer;
-      list-style:none;
-      font-weight:800;
-      line-height:1.5;
-    }
-
-    summary::-webkit-details-marker{
-      display:none;
-    }
-
-    details p{
-      margin:12px 0 0;
-      color:var(--muted);
-      line-height:1.7;
-      font-size:15px;
-    }
-
-    .footer{
-      padding:36px 0 50px;
-      color:var(--muted);
-      border-top:1px solid var(--line);
-      margin-top:16px;
-    }
-
-    .footer-inner{
-      display:flex;
-      justify-content:space-between;
-      gap:16px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
-
-    .back-top{
-      position:fixed;
-      right:20px;
-      bottom:20px;
-      width:52px;
-      height:52px;
-      border:none;
-      border-radius:50%;
-      background:linear-gradient(135deg,var(--brand),var(--brand2));
-      color:#fff;
-      font-size:20px;
-      font-weight:700;
-      cursor:pointer;
-      box-shadow:0 16px 34px rgba(0,0,0,.3);
-      display:none;
-      z-index:60;
-    }
-
-    .back-top.show{
-      display:block;
-    }
-
-    .reveal{
-      opacity:0;
-      transform:translateY(28px);
-      transition:opacity .7s ease, transform .7s ease;
-    }
-
-    .reveal.visible{
-      opacity:1;
-      transform:translateY(0);
-    }
-
-    @media (max-width: 960px){
-      .hero-grid,
-      .offer-wrap,
-      .grid-3,
-      .testimonials,
-      .bonus-grid{
-        grid-template-columns:1fr;
-      }
-
-      .hero{
-        padding-top:42px;
-      }
-
-      .top-actions{
-        gap:8px;
-      }
-    }
-
-    @media (max-width: 700px){
-      .topbar-inner{
-        align-items:flex-start;
-        flex-direction:column;
-      }
-
-      .top-actions{
-        width:100%;
-      }
-
-      .top-actions .btn{
-        flex:1 1 100%;
-        width:100%;
-      }
-
-      .cta-row{
-        flex-direction:column;
-      }
-
-      .cta-row .btn{
-        width:100%;
-      }
-
-      .proof-row{
-        flex-direction:column;
-      }
-
-      .proof-pill{
-        width:100%;
-      }
-
-      .meta-grid{
-        grid-template-columns:1fr;
-      }
-    }
-
-    @media (max-width: 640px){
-      .container{
-        width:min(var(--max), calc(100% - 24px));
-      }
-
-      .hero-copy,
-      .hero-side,
-      .card,
-      .offer-card,
-      .side-box,
-      .bonus-card,
-      .guarantee{
-        padding:20px;
-      }
-
-      .hero{
-        padding:36px 0 22px;
-      }
-
-      .section{
-        padding:28px 0;
-      }
-
-      .btn{
-        width:100%;
-        min-height:52px;
-      }
-
-      .btn-soft{
-        width:100%;
-      }
-
-      .price strong{
-        font-size:42px;
-      }
-
-      .section-head p,
-      .subheadline,
-      .card p,
-      .quote p,
-      .side-box p,
-      .guarantee p,
-      details p{
-        font-size:15px;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>300 Prompts para Ganhar Dinheiro com IA</title>
+
+<style>
+
+:root{
+--bg:#0b1020;
+--card:#0f1630;
+--text:#e8ecff;
+--muted:#b5bdd9;
+--line:rgba(255,255,255,.08);
+--brand:#6d5efc;
+--brand2:#00d4ff;
+}
+
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:var(--bg);
+color:var(--text);
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+h2{
+margin-top:40px;
+}
+
+p{
+color:var(--muted);
+}
+
+.hero{
+padding-top:40px;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:30px;
+}
+
+.card{
+background:var(--card);
+border-radius:18px;
+padding:30px;
+border:1px solid var(--line);
+}
+
+.btn{
+display:inline-block;
+padding:14px 24px;
+border-radius:10px;
+background:linear-gradient(135deg,var(--brand),var(--brand2));
+color:white;
+text-decoration:none;
+font-weight:bold;
+margin-top:15px;
+}
+
+.micro{
+margin-top:15px;
+font-size:14px;
+}
+
+.section{
+margin-top:60px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.feature{
+background:var(--card);
+padding:20px;
+border-radius:12px;
+border:1px solid var(--line);
+}
+
+.offer{
+background:linear-gradient(135deg, rgba(109,94,252,.15), rgba(0,212,255,.10));
+padding:30px;
+border-radius:20px;
+border:1px solid var(--line);
+text-align:center;
+}
+
+.price{
+font-size:36px;
+font-weight:bold;
+}
+
+.bullets{
+list-style:none;
+padding:0;
+margin-top:10px;
+}
+
+.bullets li{
+margin-bottom:8px;
+}
+
+.ok{
+color:#22c55e;
+margin-right:6px;
+}
+
+.chat-mockup{
+width:100%;
+max-width:380px;
+margin:auto;
+border-radius:25px;
+overflow:hidden;
+background:#ece5dd;
+border:8px solid #111;
+}
+
+.chat-top{
+background:#f7f7f7;
+padding:10px;
+}
+
+.chat-user{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.chat-avatar{
+width:36px;
+height:36px;
+border-radius:50%;
+background:linear-gradient(135deg,#6d5efc,#00d4ff);
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-weight:bold;
+}
+
+.chat-body{
+padding:15px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.msg{
+max-width:80%;
+padding:10px;
+border-radius:12px;
+font-size:14px;
+}
+
+.msg-left{
+align-self:flex-start;
+background:#fff;
+color:#111;
+}
+
+.msg-right{
+align-self:flex-end;
+background:#d9fdd3;
+color:#111;
+}
+
+.faq{
+margin-top:40px;
+}
+
+details{
+margin-bottom:10px;
+background:var(--card);
+padding:15px;
+border-radius:10px;
+}
+
+footer{
+margin-top:60px;
+text-align:center;
+color:var(--muted);
+}
+
+@media (max-width:900px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
-  <header class="topbar">
-    <div class="container">
-      <div class="topbar-inner">
-        <a class="logo" href="#topo">
-          <span class="logo-mark"></span>
-          <span>300 Prompts IA</span>
-        </a>
+<div class="container hero">
 
-        <div class="top-actions">
-          <a class="btn btn-soft" href="#faq">Tirar dúvidas</a>
-          <a class="btn btn-primary" href="https://pay.kiwify.com.br/HTl0t8F" target="_blank" rel="noopener noreferrer">Comprar agora</a>
-        </div>
-      </div>
-    </div>
-  </header>
+<div class="hero-grid">
 
-  <main id="topo" class="hero">
-    <div class="container">
-      <div class="hero-grid">
+<div class="card">
 
-        <section class="panel hero-copy reveal">
-          <div class="badge">
-            <span class="badge-dot"></span>
-            Acesso imediato • Copie e cole
-          </div>
+<h1>300 Prompts para ganhar dinheiro com IA</h1>
 
-          <h1>
-            300 Prompts para <span class="gradient">ganhar dinheiro com IA</span>
-            usando conteúdo, vendas e produtos digitais
-          </h1>
+<p>
+Crie posts virais, roteiros de Reels, produtos digitais e copy de vendas
+usando prompts prontos para copiar e colar.
+</p>
 
-          <p class="subheadline">
-            Pare de perder tempo tentando descobrir o que pedir para a IA. Receba prompts prontos para criar
-            <b>posts virais</b>, <b>roteiros de Reels</b>, <b>produtos digitais</b> e <b>copy de vendas</b> com muito mais rapidez.
-          </p>
+<a class="btn" href="https://pay.kiwify.com.br/HTl0t8F">
+Quero acesso agora
+</a>
 
-          <div class="cta-row">
-            <a class="btn btn-primary" href="https://pay.kiwify.com.br/HTl0t8F" target="_blank" rel="noopener noreferrer">Quero acesso imediato</a>
-            <a class="btn btn-soft" href="#conteudo">Ver o que vou receber</a>
-          </div>
+<div class="micro">
+✔ Fácil para iniciantes  
+<br>
+✔ Funciona no ChatGPT, Gemini e Claude  
+<br>
+✔ Uso imediato
+</div>
 
-          <div class="proof-row">
-            <span class="proof-pill"><span class="proof-check">✓</span> Fácil para iniciantes</span>
-            <span class="proof-pill"><span class="proof-check">✓</span> ChatGPT, Gemini e Claude</span>
-            <span class="proof-pill"><span class="proof-check">✓</span> Uso imediato</span>
-          </div>
-        </section>
+</div>
 
-        <aside class="panel hero-side reveal">
-          <div class="glass-box">
-            <h3 class="box-title">O que vem no pacote</h3>
+</div>
 
-            <div class="meta-grid">
-              <div class="meta-card">
-                <b>300 prompts</b>
-                <small>organizados por objetivo</small>
-              </div>
+</div>
 
-              <div class="meta-card">
-                <b>Copy & Conteúdo</b>
-                <small>para criar e vender</small>
-              </div>
 
-              <div class="meta-card">
-                <b>Formato simples</b>
-                <small>copie, cole e adapte</small>
-              </div>
+<div class="container section">
 
-              <div class="meta-card">
-                <b>Aplicação prática</b>
-                <small>uso real no digital</small>
-              </div>
-            </div>
-          </div>
+<h2>O que você vai conseguir criar</h2>
 
-          <div class="glass-box mini-proof">
-            <div class="mini-item"><span class="star">★</span> Ideal para afiliados, criadores, freelancers e infoprodutores</div>
-            <div class="mini-item"><span class="star">★</span> Economize horas na criação de conteúdo e páginas de venda</div>
-            <div class="mini-item"><span class="star">★</span> Tenha ideias e estruturas prontas sem começar do zero</div>
-          </div>
-        </aside>
+<div class="grid">
 
-      </div>
-    </div>
-  </main>
+<div class="feature">
+<h3>Posts virais</h3>
+<p>Prompts para criar conteúdo que viraliza nas redes sociais.</p>
+</div>
 
- <section class="section reveal" id="demonstracao">
-  <div class="container">
-    <div class="section-head">
-      <h2>Até quem é iniciante consegue usar</h2>
-      <p>
-        Você não precisa saber mexer muito com IA. Os prompts foram feitos para
-        serem simples: é só copiar, colar e adaptar.
-      </p>
-    </div>
+<div class="feature">
+<h3>Reels explosivos</h3>
+<p>Roteiros prontos para aumentar alcance e engajamento.</p>
+</div>
 
-    <div class="demo-wrap">
-      <div class="demo-text">
-        <div class="demo-card">
-          <h3>Sem complicação</h3>
-          <p>
-            Mesmo quem nunca usou IA consegue aplicar.
-            Basta copiar o prompt, colar na IA e adaptar para o seu nicho.
-          </p>
+<div class="feature">
+<h3>Produtos digitais</h3>
+<p>Use IA para criar produtos digitais rapidamente.</p>
+</div>
 
-          <ul class="bullets">
-            <li><span class="ok">✓</span> Fácil para iniciantes</li>
-            <li><span class="ok">✓</span> Copiar e colar</li>
-            <li><span class="ok">✓</span> Economiza tempo</li>
-          </ul>
-        </div>
-      </div>
+<div class="feature">
+<h3>Copy de vendas</h3>
+<p>Prompts que criam páginas de vendas que convertem.</p>
+</div>
 
-      <div class="demo-image">
-        <img src="conversa.png.png" alt="Conversa mostrando facilidade de uso">
-      </div>
-    </div>
-  </div>
-</section>
-          Esse material foi pensado para quem quer transformar a IA em uma ferramenta prática de produção e vendas,
-          sem enrolação e sem precisar ser especialista.
-        </p>
-      </div>
+<div class="feature">
+<h3>Anúncios</h3>
+<p>Textos prontos para campanhas e anúncios.</p>
+</div>
 
-      <div class="grid-3">
-        <article class="card">
-          <div class="icon">🔥</div>
-          <h3>Posts virais</h3>
-          <p>Prompts para ideias de conteúdo, ganchos fortes, legendas e estruturas pensadas para chamar atenção nas redes sociais.</p>
-        </article>
+<div class="feature">
+<h3>Modelos prontos</h3>
+<p>Estruturas reutilizáveis para qualquer nicho.</p>
+</div>
 
-        <article class="card">
-          <div class="icon">🎬</div>
-          <h3>Reels explosivos</h3>
-          <p>Roteiros com início forte, retenção e CTA para aumentar alcance, engajamento e chance de conversão.</p>
-        </article>
+</div>
 
-        <article class="card">
-          <div class="icon">📦</div>
-          <h3>Produtos digitais</h3>
-          <p>Use a IA para gerar ideias, nomes, estruturas, módulos e entregas de produtos digitais com mais velocidade.</p>
-        </article>
+</div>
 
-        <article class="card">
-          <div class="icon">🛒</div>
-          <h3>Copy de vendas</h3>
-          <p>Prompts para headline, promessa, benefícios, quebra de objeção, CTA e blocos de páginas de venda.</p>
-        </article>
 
-        <article class="card">
-          <div class="icon">📣</div>
-          <h3>Anúncios</h3>
-          <p>Crie variações de textos e chamadas para campanhas com muito mais facilidade e menos bloqueio criativo.</p>
-        </article>
+<div class="container section">
 
-        <article class="card">
-          <div class="icon">🧠</div>
-          <h3>Modelos replicáveis</h3>
-          <p>Estruturas que você pode adaptar para diferentes nichos, ofertas e públicos sem reinventar tudo.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+<h2>Até quem é iniciante consegue usar</h2>
 
-  <section class="section reveal">
-    <div class="container">
-      <div class="section-head">
-        <h2>O que as pessoas mais buscam com esse tipo de material</h2>
-        <p>
-          Mais velocidade, mais clareza e menos tempo perdido tentando descobrir como usar a IA da forma certa.
-        </p>
-      </div>
+<p>
+Você não precisa saber mexer muito com IA. Os prompts foram feitos para
+serem simples: é só copiar, colar e adaptar.
+</p>
 
-      <div class="testimonials">
-        <div class="quote">
-          <p>“Antes eu travava para criar conteúdo. Com prompts prontos, ficou muito mais fácil produzir e testar ideias.”</p>
-          <div class="quote-footer">
-            <div class="avatar">L</div>
-            <div>Lucas • Criador de conteúdo</div>
-          </div>
-        </div>
+<div class="chat-mockup">
 
-        <div class="quote">
-          <p>“A parte de copy ajuda muito. Dá para acelerar a construção de oferta, promessa e páginas de venda.”</p>
-          <div class="quote-footer">
-            <div class="avatar">A</div>
-            <div>Ana • Afiliada</div>
-          </div>
-        </div>
+<div class="chat-top">
 
-        <div class="quote">
-          <p>“O melhor é não começar do zero. Você pega a estrutura pronta, adapta e já consegue aplicar na prática.”</p>
-          <div class="quote-footer">
-            <div class="avatar">M</div>
-            <div>Marcelo • Empreendedor digital</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="chat-user">
 
-  <section class="section reveal">
-    <div class="container">
-      <div class="section-head">
-        <h2>Bônus para acelerar seus resultados</h2>
-        <p>Esses extras ajudam a aplicar os prompts com ainda mais rapidez.</p>
-      </div>
+<div class="chat-avatar">M</div>
 
-      <div class="bonus-grid">
-        <div class="bonus-card">
-          <span class="bonus-tag">BÔNUS 01</span>
-          <h3>Ideias rápidas de conteúdo</h3>
-          <p>Use estruturas prontas para gerar temas e conteúdos sem travar.</p>
-        </div>
+<div>
+<strong>Mirakle</strong><br>
+<span style="color:#666;font-size:12px">online</span>
+</div>
 
-        <div class="bonus-card">
-          <span class="bonus-tag">BÔNUS 02</span>
-          <h3>Modelos de copy</h3>
-          <p>Blocos prontos para promessas, benefícios e chamadas de ação.</p>
-        </div>
+</div>
 
-        <div class="bonus-card">
-          <span class="bonus-tag">BÔNUS 03</span>
-          <h3>Aplicação em nichos</h3>
-          <p>Adapte os prompts para vários mercados sem precisar criar tudo do zero.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+</div>
 
-  <section class="section reveal" id="oferta">
-    <div class="container">
-      <div class="offer-wrap">
+<div class="chat-body">
 
-        <div class="offer-card">
-          <span class="offer-label">OFERTA ESPECIAL</span>
-          <h2>Tenha acesso agora ao pacote completo</h2>
+<div class="msg msg-left">
+Sério? Achei que precisava saber mexer muito em IA.
+</div>
 
-          <div class="price">
-            <strong>R$19,90</strong>
-            <span>pagamento único</span>
-          </div>
+<div class="msg msg-right">
+Nada. É só copiar e colar o prompt.
+</div>
 
-          <div class="timer">
-            ⏳ Oferta termina em <span id="countdown">15:00</span>
-          </div>
+<div class="msg msg-left">
+Ah, então facilita bastante.
+</div>
 
-          <div class="cta-row">
-            <a class="btn btn-primary" href="https://pay.kiwify.com.br/HTl0t8F" target="_blank" rel="noopener noreferrer">Comprar agora</a>
-          </div>
+<div class="msg msg-right">
+Demais. Economiza muito tempo.
+</div>
 
-          <ul class="bullets">
-            <li><span class="ok">✓</span> 300 prompts prontos para usar</li>
-            <li><span class="ok">✓</span> Conteúdo, vendas, anúncios e produtos digitais</li>
-            <li><span class="ok">✓</span> Aplicação simples para iniciantes</li>
-            <li><span class="ok">✓</span> Acesso imediato após o pagamento</li>
-          </ul>
-        </div>
+<div class="msg msg-left">
+Boa, vou garantir o meu então.
+</div>
 
-        <aside class="side-box">
-          <h3>Para quem é esse material</h3>
-          <p>Esse pacote é ideal para quem quer usar IA de forma prática para produzir mais e vender melhor.</p>
+</div>
 
-          <ul class="bullets">
-            <li><span class="ok">✓</span> Criadores de conteúdo</li>
-            <li><span class="ok">✓</span> Afiliados e infoprodutores</li>
-            <li><span class="ok">✓</span> Social media e freelancers</li>
-            <li><span class="ok">✓</span> Empreendedores digitais</li>
-            <li><span class="ok">✓</span> Iniciantes que querem um caminho pronto</li>
-          </ul>
-        </aside>
+</div>
 
-      </div>
-    </div>
-  </section>
+</div>
 
-  <section class="section reveal">
-    <div class="container">
-      <div class="guarantee">
-        <h3>Garantia de satisfação</h3>
-        <p>
-          Você compra com mais segurança e acessa o material de forma imediata. Essa seção ajuda a aumentar a confiança
-          na oferta e reduzir a objeção antes da compra.
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <section class="section reveal" id="faq">
-    <div class="container">
-      <div class="section-head">
-        <h2>Perguntas frequentes</h2>
-        <p>Essas respostas ajudam a remover as principais dúvidas antes da compra.</p>
-      </div>
+<div class="container section">
 
-      <div class="faq">
-        <details open>
-          <summary>Como eu recebo o material?</summary>
-          <p>Depois da confirmação do pagamento, o acesso é liberado imediatamente pela plataforma de checkout.</p>
-        </details>
+<div class="offer">
 
-        <details>
-          <summary>Preciso ter experiência com IA?</summary>
-          <p>Não. Os prompts foram pensados para quem quer copiar, colar, adaptar e começar a usar sem complicação.</p>
-        </details>
+<h2>Oferta especial</h2>
 
-        <details>
-          <summary>Posso usar em diferentes nichos?</summary>
-          <p>Sim. Você pode adaptar os prompts para vários mercados, públicos e ofertas.</p>
-        </details>
+<p class="price">R$19,90</p>
 
-        <details>
-          <summary>Em quais ferramentas posso usar?</summary>
-          <p>Você pode aplicar no ChatGPT, Gemini, Claude e em outras ferramentas que aceitem prompts.</p>
-        </details>
-      </div>
-    </div>
-  </section>
+<p>Acesso imediato após a compra.</p>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div>© 2026 — 300 Prompts para Ganhar Dinheiro com IA</div>
-        <a class="btn btn-soft" href="#topo">Voltar ao topo</a>
-      </div>
-    </div>
-  </footer>
+<a class="btn" href="https://pay.kiwify.com.br/HTl0t8F">
+Comprar agora
+</a>
 
-  <button class="back-top" id="backTop" aria-label="Voltar ao topo">↑</button>
+</div>
 
-  <script>
-    let totalSeconds = 15 * 60;
-    const countdown = document.getElementById("countdown");
+</div>
 
-    function updateCountdown(){
-      const minutes = Math.floor(totalSeconds / 60);
-      const seconds = totalSeconds % 60;
-      countdown.textContent =
-        String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
 
-      if(totalSeconds > 0){
-        totalSeconds--;
-      }
-    }
+<div class="container faq">
 
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
+<h2>Perguntas frequentes</h2>
 
-    const revealEls = document.querySelectorAll(".reveal");
-    const revealObserver = new IntersectionObserver((entries)=>{
-      entries.forEach((entry)=>{
-        if(entry.isIntersecting){
-          entry.target.classList.add("visible");
-        }
-      });
-    },{threshold:0.14});
+<details>
+<summary>Como recebo o material?</summary>
+<p>Você recebe acesso imediatamente após o pagamento.</p>
+</details>
 
-    revealEls.forEach((el)=>revealObserver.observe(el));
+<details>
+<summary>Preciso saber usar IA?</summary>
+<p>Não. Basta copiar e colar os prompts.</p>
+</details>
 
-    const backTop = document.getElementById("backTop");
+<details>
+<summary>Funciona em qualquer nicho?</summary>
+<p>Sim, basta adaptar o prompt para seu público.</p>
+</details>
 
-    window.addEventListener("scroll", ()=>{
-      if(window.scrollY > 320){
-        backTop.classList.add("show");
-      }else{
-        backTop.classList.remove("show");
-      }
-    });
+</div>
 
-    backTop.addEventListener("click", ()=>{
-      window.scrollTo({top:0, behavior:"smooth"});
-    });
-  </script>
+<footer>
+
+© 2026 — 300 Prompts para Ganhar Dinheiro com IA
+
+</footer>
+
 </body>
 </html>
